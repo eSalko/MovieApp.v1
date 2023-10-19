@@ -27,14 +27,14 @@ class MenuFunctions:
         year = input("What year did it come out? ")
         time = input("How long is the movie(mins)? ")
 
-        movieDict = {
+        movie_data = {
             "title": title,
             "genre": genre,
             "year": year,
             "runtime": time
         }
         try:
-            movieCollection.insert_one(movieDict)
+            movieCollection.insert_one(movie_data)
             print("Movie added successfully!")
         except Exception as e:
             print(f"Error adding movie: {str(e)}")
