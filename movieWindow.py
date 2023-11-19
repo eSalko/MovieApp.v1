@@ -51,12 +51,15 @@ greeting.pack()
 tk.Label(text="Title: ").pack()
 titleEntry = tk.Entry(width=50)
 titleEntry.pack()
+
 tk.Label(text="Genre: ").pack()
 genreEntry = tk.Entry(width=50)
 genreEntry.pack()
+
 tk.Label(text="Year: ").pack()
 yearEntry = tk.Entry(width=50)
 yearEntry.pack()
+
 tk.Label(text="Runtime(mins): ").pack()
 runtimeEntry = tk.Entry(width=50)
 runtimeEntry.pack()
